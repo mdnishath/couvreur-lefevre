@@ -57,3 +57,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Review slider stile */
+.review-swiper {
+  padding: 20px !important;
+}
+.swiper-pagination {
+  bottom: -4px !important;
+}

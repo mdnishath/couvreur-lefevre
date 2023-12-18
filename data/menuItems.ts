@@ -5,8 +5,8 @@ export const menuItems: { name: string; path: string }[] = [
   },
 
   {
-    name: "Roof Repair",
-    path: "/roof-repair",
+    name: "Services",
+    path: "/services",
   },
   {
     name: "Gallery",
