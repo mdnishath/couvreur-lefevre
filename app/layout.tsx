@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { TChildren } from "@/types";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,24 @@ export default function RootLayout({ children }: TChildren) {
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
-        <main>{children}</main>
+        <main>
+          <NextTopLoader
+            color="#F97316"
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={3}
+            crawl={true}
+            showSpinner={true}
+            easing="ease"
+            speed={200}
+            shadow="0 0 10px #F97316,0 0 5px #F97316"
+            template='<div class="bar" role="bar"><div class="peg"></div></div> 
+  <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+            zIndex={1600}
+            showAtBottom={false}
+          />
+          {children}
+        </main>
       </body>
     </html>
   );

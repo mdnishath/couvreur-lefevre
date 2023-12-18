@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="bg-[url('/hero.webp')] h-[600px] bg-cover bg-no-repeat bg-center ">
       <div className="h-full bg-slate-700 bg-opacity-70 w-full flex items-center justify-center flex-col">
-        <h1 className="text-center font-bold text-white md:text-4xl">
+        <h1 className="text-center font-bold text-white md:text-4xl text-3xl">
           Couvreur Lefèvre - Your <span className="text-primary">Trusted</span>{" "}
           Roofing Experts
         </h1>

@@ -6,9 +6,9 @@ import React from "react";
 const ServiceExplain = () => {
   return (
     <>
-      <section className="pt-10">
+      <section className="pt-10 px-3 md:px-0">
         <Container>
-          <div className="grid grid-cols-2 gap-0 items-center">
+          <div className="grid md:grid-cols-2 gap-0 items-center">
             <div>
               <Image
                 src={"/images/roofer.jpg"}
@@ -18,10 +18,8 @@ const ServiceExplain = () => {
                 className="w-full"
               />
             </div>
-            <div className="p-10 pr-0">
-              <h3 className="text-3xl font-bold text-primary">
-                Roofer in Marines
-              </h3>
+            <div className="p-3 md:p-10 md:pr-0">
+              <h3 className="text-3xl font-bold ">Roofer in Marines</h3>
               <p className="mt-4">
                 Our roofing services encompass a broad spectrum, ranging from
                 routine maintenance to intricate installations. With a team of
@@ -41,11 +39,9 @@ const ServiceExplain = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 items-center">
-            <div className="p-10 pl-0">
-              <h3 className="text-3xl font-bold text-primary">
-                Tile Roofing in Marines
-              </h3>
+          <div className="grid md:grid-cols-2 items-center">
+            <div className="p-3 md:p-10 md:pl-0 order-2 md:order-1">
+              <h3 className="text-3xl font-bold ">Tile Roofing in Marines</h3>
               <p className="mt-4">
                 Explore a world of roofing elegance with our diverse tile
                 roofing solutions. Whether you lean towards classic designs or
@@ -63,7 +59,7 @@ const ServiceExplain = () => {
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="order-1 md:order-2">
               <Image
                 src={"/images/tile-roofing.jpg"}
                 width={600}
@@ -77,7 +73,7 @@ const ServiceExplain = () => {
       </section>
       <section>
         <Container>
-          <div className="grid grid-cols-2 gap-0 items-center">
+          <div className="grid md:grid-cols-2 gap-0 items-center">
             <div>
               <Image
                 src={"/images/z-roofing.jpg"}
@@ -87,10 +83,8 @@ const ServiceExplain = () => {
                 className="w-full"
               />
             </div>
-            <div className="p-10 pr-0">
-              <h3 className="text-3xl font-bold text-primary">
-                Zinc Roofing in Marines
-              </h3>
+            <div className="p-4 md:p-10 md:pr-0">
+              <h3 className="text-3xl font-bold ">Zinc Roofing in Marines</h3>
               <p className="mt-4">
                 Choose a roofing solution that aligns with environmental
                 consciousness and contemporary design – our zinc roofing
@@ -108,11 +102,9 @@ const ServiceExplain = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 items-center">
-            <div className="p-10 pl-0">
-              <h3 className="text-3xl font-bold text-primary">
-                Slate Roofing in Marines
-              </h3>
+          <div className="grid md:grid-cols-2 items-center">
+            <div className="p-4 md:p-10 md:pl-0 order-2 md:order-1">
+              <h3 className="text-3xl font-bold ">Slate Roofing in Marines</h3>
               <p className="mt-4">
                 {`Immerse yourself in the timeless beauty of natural slate with
                 our expert slate roofing services. Meticulously installed by
@@ -129,7 +121,7 @@ const ServiceExplain = () => {
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="order-1 md:order-2">
               <Image
                 src={"/images/slate-roof.jpg"}
                 width={600}

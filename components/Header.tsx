@@ -10,7 +10,7 @@ import { SlCallOut } from "react-icons/sl";
 const Header = () => {
   const pathname = usePathname();
   return (
-    <header className="shadow-md bg-white py-2">
+    <header className=" hidden md:block shadow-md bg-white py-2">
       <Container>
         <div className="flex items-center">
           <Link href={"/"} className="flex-shrink-0">

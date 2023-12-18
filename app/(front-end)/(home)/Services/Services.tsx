@@ -4,12 +4,12 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="py-10 bg-primary">
+    <section className="py-10 bg-primary px-3 md:px-0">
       <Container>
-        <h2 className="md:text-4xl font-bold text-white text-center md:w-[800px] mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center md:w-[800px] mx-auto">
           Your First-Class Local Roofing Contractors Serving Marines
         </h2>
-        <div className="mt-5 grid grid-cols-3 gap-4">
+        <div className="mt-5 grid md:grid-cols-3 gap-4">
           {services.map(({ title, description }) => (
             <div key={title} className="bg-white rounded-lg shadow-lg p-5">
               <h4 className="text-2xl font-bold">{title}</h4>
